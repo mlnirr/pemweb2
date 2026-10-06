@@ -1,0 +1,219 @@
+/* RESET & FONTS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f4f5f7;
+    color: #333333;
+    padding: 30px 15px;
+    display: flex;
+    justify-content: center;
+}
+
+/* LAYOUT CONTAINER */
+.cv-container {
+    width: 100%;
+    max-width: 850px;
+    background: #ffffff;
+    display: flex;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    min-height: 1100px;
+}
+
+.sidebar {
+    width: 33%;
+    background-color: #1a1e28; 
+    color: #ffffff;
+    padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-frame {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #8e94a0;
+    margin: 0 auto 35px auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* SIDEBAR SECTIONS */
+.sidebar-section {
+    margin-bottom: 30px;
+}
+
+.sidebar-title {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #ffffff;
+    padding-bottom: 6px;
+    border-bottom: 1.5px solid #4a5162;
+    margin-bottom: 15px;
+}
+
+.about-text {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #d1d5db;
+    text-align: justify;
+}
+
+/* KONTAK */
+.contact-list {
+    list-style: none;
+}
+
+.contact-list li {
+    font-size: 12px;
+    color: #d1d5db;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    word-break: break-all;
+}
+
+.contact-list i {
+    width: 20px;
+    margin-right: 8px;
+    font-size: 13px;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* SKILLS */
+.skill-category {
+    font-size: 13px;
+    font-weight: 600;
+    color: #e5e7eb;
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+.skills-list {
+    list-style-type: disc;
+    margin-left: 18px;
+    margin-bottom: 12px;
+}
+
+.skills-list li {
+    font-size: 12px;
+    color: #d1d5db;
+    margin-bottom: 5px;
+}
+
+.main-content {
+    width: 67%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #0d1117;
+    color: #ffffff;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.header .subtitle {
+    font-size: 14px;
+    font-weight: 300;
+    color: #9ca3af;
+    letter-spacing: 1px;
+}
+
+
+.content-section {
+    padding: 25px 35px 0 35px;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1e28;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #d1d5db;
+    margin-bottom: 20px;
+}
+
+
+.item {
+    margin-bottom: 20px;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 6px;
+}
+
+.item-role {
+    font-size: 14px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.item-company {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #4b5563;
+    margin-top: 2px;
+}
+
+.item-date {
+    font-size: 12px;
+    font-weight: 500;
+    color: #6b7280;
+    white-space: nowrap;
+}
+
+.item-list {
+    list-style-type: disc;
+    margin-left: 18px;
+}
+
+.item-list li {
+    font-size: 12.5px;
+    color: #4b5563;
+    line-height: 1.5;
+    margin-bottom: 4px;
+}
+
+/* PRINT OPTIMIZATION (Gunakan Ctrl+P untuk Save PDF) */
+@media print {
+    body {
+        background-color: #ffffff;
+        padding: 0;
+    }
+
+    .cv-container {
+        box-shadow: none;
+        width: 100%;
+        max-width: 100%;
+    }
+}
